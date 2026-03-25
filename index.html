@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ── Primary SEO ─────────────────────────────────── -->
+  <title>CTunes — Free Android Soundboard App | Map Keys to Audio Files</title>
+  <meta name="description" content="CTunes is a free Android soundboard app. Map keyboard keys A–Z and 0–9 to any audio file — tap on screen or press a physical Bluetooth keyboard for instant playback. No sign-in needed." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="CTunes" />
+  <link rel="canonical" href="https://anooppandikashala.github.io/ctunes.app/" />
+
+  <!-- ── Open Graph ──────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="CTunes" />
+  <meta property="og:url"         content="https://anooppandikashala.github.io/ctunes.app/" />
+  <meta property="og:title"       content="CTunes — Free Android Soundboard App | Map Keys to Audio Files" />
+  <meta property="og:description" content="Map keyboard keys A–Z and 0–9 to any audio file. Tap on screen or press a physical Bluetooth keyboard for instant playback. Free on Android — no subscription, no sign-in." />
+  <meta property="og:image"       content="https://anooppandikashala.github.io/ctunes.app/logo.webp" />
+  <meta property="og:image:alt"   content="CTunes app logo — Android soundboard" />
+  <meta property="og:locale"      content="en_US" />
+
+  <!-- ── Twitter Card ───────────────────────────────── -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="CTunes — Free Android Soundboard App" />
+  <meta name="twitter:description" content="Map keyboard keys A–Z and 0–9 to any audio file. Instant playback on tap or physical keypress. Free on Google Play." />
+  <meta name="twitter:image"       content="https://anooppandikashala.github.io/ctunes.app/logo.webp" />
+
+  <!-- ── Mobile / PWA ───────────────────────────────── -->
+  <meta name="theme-color" content="#080C10" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="CTunes" />
+
+  <!-- ── Structured Data (JSON-LD) ──────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://anooppandikashala.github.io/ctunes.app/#app",
+        "name": "CTunes",
+        "alternateName": "CTunes Soundboard",
+        "description": "CTunes is a free Android soundboard app that maps keyboard keys (A–Z and 0–9) to audio files for instant playback. Supports on-screen tap and physical Bluetooth keyboards.",
+        "applicationCategory": "MusicApplication",
+        "operatingSystem": "Android 7.0+",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@id": "https://anooppandikashala.github.io/ctunes.app/#organization" },
+        "image": "https://anooppandikashala.github.io/ctunes.app/logo.webp",
+        "url": "https://anooppandikashala.github.io/ctunes.app/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.anoop.myprojects.ctunes",
+        "featureList": [
+          "Map 36 keyboard keys (A–Z, 0–9) to any audio file",
+          "Instant on-screen tap or physical keyboard playback",
+          "Bluetooth keyboard support",
+          "Import and export key layouts as JSON",
+          "Persistent storage — mappings survive reboots and reinstalls"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://anooppandikashala.github.io/ctunes.app/#organization",
+        "name": "CTunes",
+        "url": "https://anooppandikashala.github.io/ctunes.app/",
+        "logo": { "@type": "ImageObject", "url": "https://anooppandikashala.github.io/ctunes.app/logo.webp" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://anooppandikashala.github.io/ctunes.app/#website",
+        "url": "https://anooppandikashala.github.io/ctunes.app/",
+        "name": "CTunes",
+        "publisher": { "@id": "https://anooppandikashala.github.io/ctunes.app/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://anooppandikashala.github.io/ctunes.app/#webpage",
+        "url": "https://anooppandikashala.github.io/ctunes.app/",
+        "name": "CTunes — Free Android Soundboard App",
+        "isPartOf": { "@id": "https://anooppandikashala.github.io/ctunes.app/#website" },
+        "about": { "@id": "https://anooppandikashala.github.io/ctunes.app/#app" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is CTunes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CTunes is a free Android soundboard app that maps keyboard keys (A–Z and 0–9) to any audio file on your device. Tap a key on screen or press a physical Bluetooth keyboard to trigger instant playback."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I assign a sound to a key in CTunes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open the key manager in CTunes, choose any key from A–Z or 0–9, browse your device audio files, and tap Save. Mappings are stored locally and persist across reboots."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does CTunes support physical Bluetooth keyboards?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. CTunes supports physical Bluetooth and wired keyboards. When you press a mapped key on your physical keyboard, CTunes plays the assigned audio instantly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I back up and restore my CTunes key layouts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Use the Export feature to save your entire key layout as a JSON file. Import it on any Android device to restore all mappings. CTunes also re-links audio files by filename if the original URI changes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is CTunes free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. CTunes is completely free on Google Play with no subscription, no sign-in, and no hidden costs."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── Fonts ───────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link href="styles.css" rel="stylesheet" />
+
+  
+</head>
+<body>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<!-- skip-to-content link for accessibility / AEO -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <img src="logo.webp" alt="CTunes logo" />
+      C<span>Tunes</span>
+    </a>
+    <a href="#download" class="nav-pill">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="5 3 19 12 5 21 5 3"/>
+      </svg>
+      Get it on Google Play
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<main id="main-content">
+<section class="hero" aria-label="Hero — map keyboard keys to audio files">
+  <div class="hero-glow"></div>
+  <div class="hero-dots"></div>
+
+  <div class="hero-inner">
+  <div class="hero-left">
+    <p class="hero-tag">Android Soundboard App</p>
+    <h1 class="hero-h1">Every key<br>is a <span class="hl">sound.</span></h1>
+    <p class="hero-sub">Map A–Z and 0–9 to your audio files. Tap on screen or press a physical keyboard. Hear it instantly.</p>
+    <div class="hero-actions">
+      <a href="#download" class="btn-fill">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Free
+      </a>
+      <a href="#how" class="btn-ghost">
+        See how it works
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="key-grid-wrap">
+      <div class="key-grid" id="keyGrid"></div>
+    </div>
+
+    <!-- Symbolic physical keyboard -->
+    <div class="kbd-section">
+      <div class="kbd-bridge">
+        <span class="kbd-bridge-line"></span>
+        <span class="kbd-bridge-label">
+          <!-- Bluetooth icon -->
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"/>
+          </svg>
+          Physical keyboard
+        </span>
+        <span class="kbd-bridge-line"></span>
+      </div>
+      <svg id="kbdSvg" class="kbd-svg" viewBox="0 0 252 110" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+  </div>
+  </div><!-- /.hero-inner -->
+</section>
+
+<!-- ═══════════════════ FEATURES ═══════════════════ -->
+<section class="features" id="features" aria-label="Features">
+  <div class="features-inner">
+    <p class="section-tag reveal">What it does</p>
+    <h2 class="section-h reveal">Built for instant expression</h2>
+    <div class="feat-grid" id="featGrid">
+      <div class="feat-card reveal" data-glyph="K">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <line x1="6" y1="9" x2="6.01" y2="9"/><line x1="10" y1="9" x2="10.01" y2="9"/>
+            <line x1="14" y1="9" x2="14.01" y2="9"/><line x1="18" y1="9" x2="18.01" y2="9"/>
+            <line x1="8" y1="13" x2="8.01" y2="13"/><line x1="12" y1="13" x2="12.01" y2="13"/>
+            <line x1="16" y1="13" x2="16.01" y2="13"/>
+            <line x1="7" y1="17" x2="17" y2="17"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Key Mapping</h3>
+        <p class="feat-desc">Assign any audio file on your device to any key — A through Z or 0 through 9. Your board, your sounds.</p>
+      </div>
+      <div class="feat-card reveal" data-glyph="⚡">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Instant Playback</h3>
+        <p class="feat-desc">Zero-lag tap on the grid or hit a physical Bluetooth keyboard. The sound fires the moment you touch it.</p>
+      </div>
+      <div class="feat-card reveal" data-glyph="↑">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17V5m0 0L3 9m4-4l4 4"/>
+            <path d="M17 7v12m0 0l4-4m-4 4l-4-4"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">Import & Export</h3>
+        <p class="feat-desc">Save your entire key layout as a portable JSON file. Share it, restore it, or back it up to any device.</p>
+      </div>
+      <div class="feat-card reveal" data-glyph="36">
+        <div class="feat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="5" height="5" rx="1"/>
+            <rect x="10" y="3" width="5" height="5" rx="1"/>
+            <rect x="17" y="3" width="5" height="5" rx="1"/>
+            <rect x="3" y="10" width="5" height="5" rx="1"/>
+            <rect x="10" y="10" width="5" height="5" rx="1"/>
+            <rect x="17" y="10" width="5" height="5" rx="1"/>
+            <rect x="3" y="17" width="5" height="5" rx="1"/>
+            <rect x="10" y="17" width="5" height="5" rx="1"/>
+            <rect x="17" y="17" width="5" height="5" rx="1"/>
+          </svg>
+        </div>
+        <h3 class="feat-title">36 Keys</h3>
+        <p class="feat-desc">Full coverage — all 26 letters plus 10 digits. 36 instant sounds, always organised, always one tap away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+<section class="how" id="how" aria-label="How it works">
+  <div class="how-inner">
+    <p class="section-tag reveal">Process</p>
+    <h2 class="section-h reveal">Three steps to your soundboard</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step-num">01</span>
+        <h3 class="step-title">Assign</h3>
+        <p class="step-desc">Open the key manager, choose a key (A–Z or 0–9), browse your audio files, and tap save. Mappings persist across reboots.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">02</span>
+        <h3 class="step-title">Play</h3>
+        <p class="step-desc">Tap any key on the home grid or press a physical Bluetooth keyboard. CTunes fires the audio instantly — no menus, no delay.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">03</span>
+        <h3 class="step-title">Share</h3>
+        <p class="step-desc">Export your entire layout as a compact JSON file. Import it on another device or keep it as a backup. Your soundboard travels with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ═══════════════════ DOWNLOAD ═══════════════════ -->
+<section class="download" id="download" aria-label="Download CTunes on Google Play">
+  <div class="dl-glow"></div>
+  <div class="dl-keys" id="dlKeys"></div>
+  <div class="download-inner reveal">
+    <img src="logo.webp" alt="CTunes" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:24px;box-shadow:0 0 32px rgba(91,155,213,0.25);" />
+    <h2>Your keys.<br>Your sounds.</h2>
+    <p>Free on Android. No subscription, no sign-in required.</p>
+    <a href="#" class="play-btn">
+      <!-- Google Play icon -->
+      <svg class="play-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="44" height="44" rx="10" fill="#1B2732"/>
+        <path d="M11 11.4L24.7 22 11 32.6V11.4Z" fill="#4CAF50"/>
+        <path d="M11 11.4L24.7 22l5.1-5.1L16 9A2.6 2.6 0 0011 11.4Z" fill="#29B6F6"/>
+        <path d="M11 32.6L24.7 22l5.1 5.1L16 35A2.6 2.6 0 0111 32.6Z" fill="#F44336"/>
+        <path d="M24.7 22l8.4-5.6a2.2 2.2 0 010 11.2L24.7 22Z" fill="#FDD835"/>
+      </svg>
+      <div class="play-text">
+        <small>Get it on</small>
+        <strong>Google Play</strong>
+      </div>
+    </a>
+  </div>
+</section>
+
+</main><!-- /main -->
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <img src="logo.webp" alt="CTunes" style="width:24px;height:24px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:8px;" />
+      C<span>Tunes</span>
+    </a>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <small>© <span id="footer-year"></span> CTunes</small>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* ── Key data ─────────────────────────────────────── */
+  const KEYS = [
+    { l:'A', n:'Kick',    c:'#E57373' },
+    { l:'B', n:'Snare',   c:'#F06292' },
+    { l:'C', n:'Hi-Hat',  c:'#BA68C8' },
+    { l:'D', n:'Clap',    c:'#7986CB' },
+    { l:'E', n:'Bass',    c:'#64B5F6' },
+    { l:'F', n:'Lead',    c:'#4DD0E1' },
+    { l:'G', n:'Pad',     c:'#26A69A' },
+    { l:'H', n:'Chord',   c:'#66BB6A' },
+    { l:'I', n:'FX',      c:'#CDDC39' },
+    { l:'J', n:'Vocal',   c:'#FFCA28' },
+    { l:'K', n:'Stab',    c:'#FFA726' },
+    { l:'L', n:'Loop',    c:'#FF7043' },
+    { l:'M', n:'Drop',    c:'#EC407A' },
+    { l:'N', n:'Rise',    c:'#AB47BC' },
+    { l:'O', n:'Synth',   c:'#5C6BC0' },
+    { l:'P', n:'Sweep',   c:'#29B6F6' },
+  ];
+
+  /* ── Render hero key grid ─────────────────────────── */
+  const grid = document.getElementById('keyGrid');
+
+  KEYS.forEach((k, i) => {
+    const card = document.createElement('div');
+    card.className = 'key-card';
+    card.style.setProperty('--c', k.c);
+    card.style.animationName = 'keyIn';
+    card.style.animationDuration = '.42s';
+    card.style.animationTimingFunction = 'cubic-bezier(.34,1.56,.64,1)';
+    card.style.animationFillMode = 'forwards';
+    card.style.animationDelay = `${.65 + i * .055}s`;
+
+    card.innerHTML = `<span class="key-letter">${k.l}</span><span class="key-name">${k.n}</span>`;
+
+    card.addEventListener('pointerdown', () => card.classList.add('pressed'));
+    card.addEventListener('pointerup',   () => card.classList.remove('pressed'));
+    card.addEventListener('pointerleave',() => card.classList.remove('pressed'));
+    grid.appendChild(card);
+  });
+
+  /* ── Build SVG keyboard ───────────────────────────── */
+  const NS  = 'http://www.w3.org/2000/svg';
+  const KBD = document.getElementById('kbdSvg');
+  const KBD_ROWS = [
+    { keys: ['Q','W','E','R','T','Y','U','I','O','P'], y: 12 },
+    { keys: ['A','S','D','F','G','H','J','K','L'],     y: 35 },
+    { keys: ['Z','X','C','V','B','N','M'],             y: 58 },
+  ];
+  const KW = 20, KH = 20, KG = 3, SVG_W = 252;
+  const kbdKeyEls = {};  // letter → { rect, txt }
+
+  function mk(tag, attrs) {
+    const el = document.createElementNS(NS, tag);
+    Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+    return el;
+  }
+
+  // Keyboard body
+  KBD.appendChild(mk('rect', { width: SVG_W, height: 110, rx: 12,
+    fill: '#111923', stroke: 'rgba(91,155,213,0.22)', 'stroke-width': 1 }));
+  // Top highlight sheen
+  KBD.appendChild(mk('rect', { x: 2, y: 1, width: SVG_W - 4, height: 1, rx: 10,
+    fill: 'rgba(255,255,255,0.06)' }));
+
+  // Build a color lookup from KEYS
+  const keyColorLookup = {};
+  KEYS.forEach(k => { keyColorLookup[k.l] = k.c; });
+
+  KBD_ROWS.forEach(({ keys, y }) => {
+    const rowW = keys.length * KW + (keys.length - 1) * KG;
+    const x0   = (SVG_W - rowW) / 2;
+    keys.forEach((letter, ci) => {
+      const x  = x0 + ci * (KW + KG);
+      const c  = keyColorLookup[letter];
+      const rect = mk('rect', {
+        x, y, width: KW, height: KH, rx: 4,
+        fill:         c ? `${c}28` : 'rgba(255,255,255,0.04)',
+        stroke:       c ? `${c}66` : 'rgba(255,255,255,0.09)',
+        'stroke-width': 1
+      });
+      const txt = mk('text', {
+        x: x + KW / 2, y: y + KH / 2 + 4,
+        'text-anchor': 'middle', 'font-family': 'Space Mono, monospace',
+        'font-size': 8, 'font-weight': 700,
+        fill: c ? `${c}cc` : 'rgba(232,240,248,0.3)'
+      });
+      txt.textContent = letter;
+      KBD.appendChild(rect);
+      KBD.appendChild(txt);
+      kbdKeyEls[letter] = { rect, txt, baseC: c };
+    });
+  });
+
+  // Spacebar
+  const spW = 100;
+  KBD.appendChild(mk('rect', {
+    x: (SVG_W - spW) / 2, y: 83, width: spW, height: 17, rx: 5,
+    fill: 'rgba(255,255,255,0.04)', stroke: 'rgba(255,255,255,0.09)', 'stroke-width': 1
+  }));
+
+  /* ── Keyboard pulse helper ────────────────────────── */
+  function kbdPulse(letter, color) {
+    const el = kbdKeyEls[letter];
+    if (!el) return;
+    el.rect.setAttribute('fill',   `${color}55`);
+    el.rect.setAttribute('stroke', color);
+    el.txt.setAttribute('fill',    color);
+    setTimeout(() => {
+      const c = el.baseC;
+      el.rect.setAttribute('fill',   c ? `${c}28` : 'rgba(255,255,255,0.04)');
+      el.rect.setAttribute('stroke', c ? `${c}66` : 'rgba(255,255,255,0.09)');
+      el.txt.setAttribute('fill',    c ? `${c}cc` : 'rgba(232,240,248,0.3)');
+    }, 220);
+  }
+
+  function kbdPress(letter) {
+    const el = kbdKeyEls[letter];
+    if (!el) return;
+    el.rect.setAttribute('fill',   'rgba(91,155,213,0.38)');
+    el.rect.setAttribute('stroke', '#5B9BD5');
+    el.txt.setAttribute('fill',    '#5B9BD5');
+  }
+
+  function kbdRelease(letter) {
+    const el = kbdKeyEls[letter];
+    if (!el) return;
+    const c = el.baseC;
+    el.rect.setAttribute('fill',   c ? `${c}28` : 'rgba(255,255,255,0.04)');
+    el.rect.setAttribute('stroke', c ? `${c}66` : 'rgba(255,255,255,0.09)');
+    el.txt.setAttribute('fill',    c ? `${c}cc` : 'rgba(232,240,248,0.3)');
+  }
+
+  /* ── Beat demo sequence ───────────────────────────── */
+  const BEAT = [0, 2, 0, 4, 1, 2, 0, 2, 5, 0, 3, 7, 0, 2, 1, 8];
+  let beatIdx = 0, lastPlayed = null;
+
+  function tick() {
+    const cards = grid.querySelectorAll('.key-card');
+    if (lastPlayed) lastPlayed.classList.remove('pressed');
+    const keyIdx = BEAT[beatIdx % BEAT.length];
+    const keyData = KEYS[keyIdx];
+    const card = cards[keyIdx];
+    if (card) { card.classList.add('pressed'); lastPlayed = card; }
+    if (keyData) kbdPulse(keyData.l, keyData.c);
+    beatIdx++;
+    setTimeout(() => { if (lastPlayed) lastPlayed.classList.remove('pressed'); }, 200);
+  }
+
+  setTimeout(() => { setInterval(tick, 420); }, 2000);
+
+  /* ── Physical keyboard mirror ─────────────────────── */
+  document.addEventListener('keydown', e => {
+    const letter = e.key.toUpperCase();
+    const idx = KEYS.findIndex(k => k.l === letter);
+    if (idx >= 0) grid.querySelectorAll('.key-card')[idx]?.classList.add('pressed');
+    kbdPress(letter);
+  });
+  document.addEventListener('keyup', e => {
+    const letter = e.key.toUpperCase();
+    const idx = KEYS.findIndex(k => k.l === letter);
+    if (idx >= 0) grid.querySelectorAll('.key-card')[idx]?.classList.remove('pressed');
+    kbdRelease(letter);
+  });
+
+  /* ── Download section decorative keys ────────────── */
+  const dlKeys = document.getElementById('dlKeys');
+  const DL_COLORS = ['#E57373','#F06292','#BA68C8','#64B5F6','#4DD0E1','#66BB6A','#FFCA28','#FFA726'];
+  DL_COLORS.forEach(c => {
+    const div = document.createElement('div');
+    div.className = 'dl-key';
+    div.style.color = c;
+    div.style.borderColor = c;
+    div.style.background = `${c}22`;
+    dlKeys.appendChild(div);
+  });
+
+  /* ── Scroll-reveal ────────────────────────────────── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, _) => {
+      if (!entry.isIntersecting) return;
+      // stagger siblings in the same parent
+      const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
+      const idx = siblings.indexOf(entry.target);
+      entry.target.style.transitionDelay = `${idx * 0.1}s`;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
